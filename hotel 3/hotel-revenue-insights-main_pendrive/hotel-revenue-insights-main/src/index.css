@@ -1,0 +1,231 @@
+@import url('@fontsource/outfit/400.css');
+@import url('@fontsource/outfit/500.css');
+@import url('@fontsource/outfit/600.css');
+@import url('@fontsource/outfit/700.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark theme (default) - Blue dark */
+    --background: 217 32% 17%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 32% 22%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 32% 22%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 217 32% 17%;
+
+    --secondary: 217 32% 28%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 32%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 45 93% 58%;
+    --accent-foreground: 217 32% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 32% 28%;
+    --input: 217 32% 24%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    --chart-1: 217 91% 60%;
+    --chart-2: 45 93% 58%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 339 90% 55%;
+    --chart-5: 200 95% 52%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 210 40% 98%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 217 32% 17%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(200 95% 52%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(45 93% 58%) 0%, hsl(38 92% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(217 32% 25%) 0%, hsl(217 32% 20%) 100%);
+
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.2);
+    --shadow-card: 0 4px 24px hsl(217 32% 10% / 0.4);
+  }
+
+  /* Light Blue theme */
+  [data-theme="light-blue"] {
+    --background: 0 0% 98%;
+    --foreground: 217 32% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 217 32% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 32% 20%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 32% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 217 32% 88%;
+    --muted-foreground: 215 20% 45%;
+
+    --accent: 45 93% 58%;
+    --accent-foreground: 217 32% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 32% 88%;
+    --input: 0 0% 96%;
+    --ring: 217 91% 60%;
+
+    --chart-1: 217 91% 60%;
+    --chart-2: 45 93% 58%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 339 90% 55%;
+    --chart-5: 200 95% 52%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 217 32% 20%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(200 95% 52%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(45 93% 58%) 0%, hsl(38 92% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(217 32% 96%) 100%);
+
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.1);
+    --shadow-card: 0 4px 24px hsl(217 32% 20% / 0.1);
+  }
+
+  /* Light Pink theme */
+  [data-theme="light-pink"] {
+    --background: 0 0% 99%;
+    --foreground: 330 45% 28%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 45% 28%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 45% 28%;
+
+    --primary: 330 81% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 330 45% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 330 30% 88%;
+    --muted-foreground: 330 20% 45%;
+
+    --accent: 45 93% 58%;
+    --accent-foreground: 330 45% 28%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 330 30% 88%;
+    --input: 0 0% 96%;
+    --ring: 330 81% 60%;
+
+    --chart-1: 330 81% 60%;
+    --chart-2: 45 93% 58%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 339 90% 55%;
+    --chart-5: 200 95% 52%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 330 45% 28%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(330 81% 60%) 0%, hsl(330 81% 65%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(45 93% 58%) 0%, hsl(38 92% 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(330 30% 96%) 100%);
+
+    --shadow-glow: 0 0 40px hsl(330 81% 60% / 0.15);
+    --shadow-card: 0 4px 24px hsl(330 45% 28% / 0.08);
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+
+  [data-theme="light-blue"] {
+    color-scheme: light;
+  }
+
+  [data-theme="light-pink"] {
+    color-scheme: light;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Outfit', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+    box-shadow: var(--shadow-card);
+  }
+
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .gradient-accent-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 20px hsl(174 72% 46% / 0.2); }
+    50% { box-shadow: 0 0 40px hsl(174 72% 46% / 0.4); }
+  }
+}

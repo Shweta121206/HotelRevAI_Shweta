@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2024-02-01",
+    "rooms_booked": 8,
+    "room_price": 195,
+    "room_type": "Standard Room"
+  },
+  {
+    "date": "2024-02-02",
+    "rooms_booked": 12,
+    "room_price": 215,
+    "room_type": "Deluxe Room"
+  },
+  {
+    "date": "2024-02-03",
+    "rooms_booked": 6,
+    "room_price": 175,
+    "room_type": "Standard Room"
+  },
+  {
+    "date": "2024-02-04",
+    "rooms_booked": 15,
+    "room_price": 240,
+    "room_type": "Executive Suite"
+  },
+  {
+    "date": "2024-02-05",
+    "rooms_booked": 9,
+    "room_price": 205,
+    "room_type": "Deluxe Room"
+  },
+  {
+    "date": "2024-02-06",
+    "rooms_booked": 11,
+    "room_price": 225,
+    "room_type": "Executive Suite"
+  },
+  {
+    "date": "2024-02-07",
+    "rooms_booked": 18,
+    "room_price": 250,
+    "room_type": "Presidential Suite"
+  },
+  {
+    "date": "2024-02-08",
+    "rooms_booked": 7,
+    "room_price": 185,
+    "room_type": "Standard Room"
+  }
+]

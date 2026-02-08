@@ -1,0 +1,17 @@
+date,rooms_booked,room_price,room_type
+2024-01-15,5,189,Standard Room
+2024-01-16,8,210,Deluxe Room
+2024-01-17,12,225,Executive Suite
+2024-01-18,3,150,Standard Room
+2024-01-19,10,245,Presidential Suite
+2024-01-20,15,199,Deluxe Room
+2024-01-21,18,215,Standard Room
+2024-01-22,7,189,Standard Room
+2024-01-23,9,225,Executive Suite
+2024-01-24,11,210,Deluxe Room
+2024-01-25,14,235,Executive Suite
+2024-01-26,6,175,Standard Room
+2024-01-27,13,220,Deluxe Room
+2024-01-28,16,245,Executive Suite
+2024-01-29,4,165,Standard Room
+2024-01-30,20,255,Presidential Suite
